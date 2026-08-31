@@ -1,11 +1,15 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Register from "./pages/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+       <Routes>
+        <Route path="/register" element={<Register />} />
+       </Routes>
       <Footer />
     </BrowserRouter>
   );
