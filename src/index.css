@@ -384,6 +384,13 @@ body {
   text-align: center;
 }
 
+.auth-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
 @media (max-width: 576px) {
   .auth-form {
     padding: 30px 20px;
@@ -392,6 +399,10 @@ body {
   .form-row {
     flex-direction: column;
     gap: 0;
+  }
+
+  .auth-subtitle {
+    font-size: 0.9rem;
   }
 }
 
