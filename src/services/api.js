@@ -107,6 +107,10 @@ export const apiService = {
         return api.post('/transactions', depositData);
     },
 
+    makeWithdrawal: (withdrawalData) => {
+        return api.post('/transactions', withdrawalData);
+    },
+
     getTransactions: (accountNumber, page = 0, size = 10) => {
         return api.get(`/transactions/${accountNumber}?page=${page}&size=${size}`);
     },

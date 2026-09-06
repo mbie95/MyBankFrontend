@@ -47,7 +47,7 @@ const Navbar = () => {
                                 <Link to="/deposit" className="navbar-link">Deposit</Link>
                             </li>
                             <li className="navbar-item">
-                                <Link to="/deposit" className="navbar-link">Withdrawal</Link>
+                                <Link to="/withdrawal" className="navbar-link">Withdrawal</Link>
                             </li>
                             <li className="navbar-item">
                                 <Link to="/transactions" className="navbar-link">Transactions</Link>

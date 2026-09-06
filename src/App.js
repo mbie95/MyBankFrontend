@@ -11,6 +11,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import Transactions from "./pages/Transactions";
 import Deposit from "./pages/Deposit";
+import Withdrawal from "./pages/Withdrawal";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/deposit" element={<Deposit />} />
+        <Route path="/withdrawal" element={<Withdrawal />} />
 
         <Route path="*" element={<NotFound />} />
        </Routes>
