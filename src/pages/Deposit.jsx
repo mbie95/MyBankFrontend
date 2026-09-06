@@ -68,13 +68,6 @@ const Deposit = () => {
             return;
         }
 
-        const sourceAccount = userAccounts.find(acc => acc.accountNumber === formData.accountNumber);
-        if (sourceAccount && parseFloat(formData.amount) > sourceAccount.balance) {
-            setError('Insufficient balance in source account');
-            setLoading(false);
-            return;
-        }
-
         try {
             const depositData = {
                 transactionType: 'DEPOSIT',
