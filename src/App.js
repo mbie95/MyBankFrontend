@@ -12,6 +12,7 @@ import ResetPassword from "./pages/ResetPassword";
 import Transactions from "./pages/Transactions";
 import Deposit from "./pages/Deposit";
 import Withdrawal from "./pages/Withdrawal";
+import Transfer from "./pages/Transfer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/deposit" element={<Deposit />} />
         <Route path="/withdrawal" element={<Withdrawal />} />
+        <Route path="/transfer" element={<Transfer />} />
 
         <Route path="*" element={<NotFound />} />
        </Routes>
