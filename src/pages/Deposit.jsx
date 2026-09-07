@@ -28,7 +28,7 @@ const Deposit = () => {
                     }
                 }
             } catch (error) {
-                console.log(error)
+                setError(error.response?.data?.message || 'Accounts fetching failed');
             }
         }
         fetchUserAccounts()
