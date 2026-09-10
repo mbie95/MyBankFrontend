@@ -13,6 +13,7 @@ import Transactions from "./pages/Transactions";
 import Deposit from "./pages/Deposit";
 import Withdrawal from "./pages/Withdrawal";
 import Transfer from "./pages/Transfer";
+import AuditorDashboard from "./pages/AuditorDashboard";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         <Route path="/deposit" element={<Deposit />} />
         <Route path="/withdrawal" element={<Withdrawal />} />
         <Route path="/transfer" element={<Transfer />} />
-
+        <Route path="/auditor-dashboard" element={<AuditorDashboard />} />
         <Route path="*" element={<NotFound />} />
        </Routes>
       <Footer />
