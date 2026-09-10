@@ -1,0 +1,1 @@
+To run frontend, open project folder in Visual Studio Code or another code editor and in terminal type: "npm run start".
