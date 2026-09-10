@@ -14,6 +14,7 @@ import Deposit from "./pages/Deposit";
 import Withdrawal from "./pages/Withdrawal";
 import Transfer from "./pages/Transfer";
 import AuditorDashboard from "./pages/AuditorDashboard";
+import { AuditorRoute, CustomerRoute } from "./services/Guard";
 
 function App() {
   return (
@@ -24,15 +25,15 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/update-profile" element={<UpdateProfile />} />
+        <Route path="/profile" element={<CustomerRoute element={<Profile />} />} />
+        <Route path="/update-profile" element={<CustomerRoute element={<UpdateProfile />} />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/transactions" element={<Transactions />} />
-        <Route path="/deposit" element={<Deposit />} />
-        <Route path="/withdrawal" element={<Withdrawal />} />
-        <Route path="/transfer" element={<Transfer />} />
-        <Route path="/auditor-dashboard" element={<AuditorDashboard />} />
+        <Route path="/transactions" element={<CustomerRoute element={<Transactions />} />} />
+        <Route path="/deposit" element={<CustomerRoute element={<Deposit />} />} />
+        <Route path="/withdrawal" element={<CustomerRoute element={<Withdrawal />} />} />
+        <Route path="/transfer" element={<CustomerRoute element={<Transfer />} />} />
+        <Route path="/auditor-dashboard" element={<AuditorRoute element={<AuditorDashboard />} />} />
         <Route path="*" element={<NotFound />} />
        </Routes>
       <Footer />
